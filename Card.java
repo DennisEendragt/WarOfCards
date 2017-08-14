@@ -8,6 +8,11 @@ class Card implements Comparable<Card> {
         return rank;
     }
 
+    public Card(int rank, String suit) {
+        this.rank = rank;
+        this.suit = suit;
+    }
+
     public int compareTo(Card other) {
         return Integer.compare(rank, other.rank);
     }

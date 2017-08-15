@@ -11,7 +11,7 @@ class Game {
     private String p2Name;
     private int p1Score;
     private int p2Score;
-    private static final Scanner input = new Scanner(in);
+    private static final Scanner input = new Scanner(System.in);
 
     public Game() {
         deck = new Deck();
@@ -41,6 +41,9 @@ class Game {
 
                 out.printf("%nThis is Round %d %n%n", roundsPlayed + 1);
 
+                out.printf("%s's card: %s%n", p1Name, p1Card.toString());
+                out.printf("%s's card: %s%n%n", p2Name, p2Card.toString());
+
                 if (p1Card.compareTo(p2Card) < 0) {
                     p2Score += 2;
                     out.printf("%s wins this round!%n", p2Name);
@@ -60,6 +63,13 @@ class Game {
             out.printf("%s's score: %d%n", p2Name, p2Score);
 
             ++roundsPlayed;
+
+            out.println("Press Enter to go to the next round...");
+            try {
+                System.in.read();
+            } catch (Exception e) {
+                out.println("Error reading key press. Moving on to the next round.");
+            }
         }
 
         out.printf("%nGame's over. ");
@@ -84,7 +94,7 @@ class Game {
         int numPlayers = 0;
 
         while (numPlayers == 0) {
-            out.printf("Enter number of players (1 or 2): ");
+            out.printf("\nEnter number of players (1 or 2): ");
 
             try {
                 numPlayers = input.nextInt();
@@ -94,10 +104,12 @@ class Game {
                 // and user is prompted again
                 if (numPlayers != 1 && numPlayers != 2) {
                     numPlayers = 0;
-                    out.println("Number entered must be 1 or 2.");
+                    out.println("\nNumber entered must be 1 or 2.");
                 }
             } catch (Exception e) {
-                out.println("Invalid input. Try again.");
+                // consume invalid token
+                input.next();
+                out.println("\nInvalid input. Try again.");
             }
         }
 
@@ -114,7 +126,7 @@ class Game {
 
             // name of player cannot be over 15 characters
             if (name.length() > 15) {
-                out.println("Name can be a maximum of 15 characters. Try again.");
+                out.println("\nName can be a maximum of 15 characters. Try again.");
                 // reset to empty string to that loop continuation condition is true
                 // and user is prompted to enter a name again
                 name = "";

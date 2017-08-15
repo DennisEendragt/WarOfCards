@@ -9,9 +9,8 @@ class Deck {
 
     private final Card[] cards = new Card[NUM_CARDS_IN_DECK];
 
-    // keeps track of which card is at the top of the deck, i.e. which Card
-    // is going to be drawn next from the deck`
-    // possible values range from 0 to 51
+    // keeps track of which card is at the top of the deck, i.e. which card
+    // is going to be drawn next from the deck
     private int indexOfTopCard = 0;
 
     public Deck() {

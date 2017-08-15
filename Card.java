@@ -1,6 +1,6 @@
 package com.dharmeshsujeeun.warofcards;
 
-class Card implements Comparable<Card> {
+class Card implements Comparable<Card>, Cloneable {
     private Rank rank;
     private Suit suit;
 
@@ -39,5 +39,9 @@ class Card implements Comparable<Card> {
 
     public String toString() {
         return String.format("%s of %s", rank, suit);
+    }
+
+    public Card clone() throws CloneNotSupportedException {
+        return (Card)super.clone();
     }
 }

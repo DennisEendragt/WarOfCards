@@ -7,6 +7,8 @@ import java.security.SecureRandom;
 class Deck {
     private static final int NUM_CARDS_IN_DECK = 52;
 
+    private static final SecureRandom rng = new SecureRandom();
+
     private final Card[] cards = new Card[NUM_CARDS_IN_DECK];
 
     // keeps track of which card is at the top of the deck, i.e. which card
@@ -30,7 +32,6 @@ class Deck {
     }
 
     private void shuffleCards() {
-        SecureRandom rng = new SecureRandom();
         int randomIndex;
         Card temp;
 

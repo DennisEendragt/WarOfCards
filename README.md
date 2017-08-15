@@ -1,4 +1,4 @@
-# War of Cards   
+# War of Cards (work in progress)  
 
 This is a game whose concept originated from an exercise in Joyce Farrell's 2015 C# book.   
 The implementation, however, is completely mine.   

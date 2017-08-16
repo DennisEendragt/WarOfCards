@@ -15,7 +15,7 @@ class Deck {
     // is going to be drawn next from the deck
     private int indexOfTopCard = 0;
 
-    public Deck() {
+    Deck() {
         createCards();
         shuffleCards();
     }
@@ -47,7 +47,7 @@ class Deck {
         }
     }
 
-    public Card getNextCard() throws Exception {
+    Card getNextCard() throws Exception {
         Card card;
 
         try {

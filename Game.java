@@ -13,7 +13,7 @@ class Game {
     private int p2Score;
     private static final Scanner input = new Scanner(System.in);
 
-    public Game() {
+    Game() {
         deck = new Deck();
         roundsPlayed = 0;
         p1Name = "";
@@ -22,7 +22,7 @@ class Game {
         p2Score = 0;
     }
 
-    public void run() {
+    void run() {
         int numPlayers = askForNumberOfPlayers();
         p1Name = getPlayerName(1);
         if (numPlayers == 1) {

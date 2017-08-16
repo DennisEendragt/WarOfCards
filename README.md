@@ -23,9 +23,9 @@ from the real world. For example, a `Deck` consists of several `Card` objects, a
 2. Download the repository as a zip file and place it in the `warofcards` folder.
 3. Extract the contents of the zip file in the `warofcards` folder.
 4. Open a terminal and navigate to the `root` folder.
-5. Type this command in the terminal and press Enter (to compile the code):
+5. Type this command in the terminal and press Enter (to compile the code):   
     `javac com/dharmeshsujeeun/warofcards/*.java`
-6. Type this command in the terminal and press Enter (to run the game):
+6. Type this command in the terminal and press Enter (to run the game):   
     `java com.dharmeshsujeeun.warofcards.RunGame`
 
 In the near future I _may_ decide to implement a GUI version of this game using HTML5/CSS3/JavaScript, and host it

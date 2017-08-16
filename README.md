@@ -16,17 +16,17 @@ from the real world. For example, a `Deck` consists of several `Card` objects, a
        having the same rank, then both players are awarded 1 point.
 4. At the end of the game, the player with the higher score wins. Of course, a tie is also
        a possibility.   
-5. ACE is considered the lowest ranked card in the game, while KING is the highest.
+5. `ACE` is considered the lowest ranked card in the game, while `KING` is the highest.
 
 ## Instructions to compile and run the game:
-1. Create this folder hierarchy: root/com/dharmeshsujeeun/warofcards
-2. Download the repository as a zip file and place it in the warofcards folder.
-3. Extract the contents of the zip file in the same folder.
-4. Open a terminal and navigate to the root folder.
+1. Create this folder hierarchy: `root/com/dharmeshsujeeun/warofcards`
+2. Download the repository as a zip file and place it in the `warofcards` folder.
+3. Extract the contents of the zip file in the `warofcards` folder.
+4. Open a terminal and navigate to the `root` folder.
 5. Type this command in the terminal and press Enter (to compile the code):
-    javac com/dharmeshsujeeun/warofcards/*.java
+    `javac com/dharmeshsujeeun/warofcards/*.java`
 6. Type this command in the terminal and press Enter (to run the game):
-    java com.dharmeshsujeeun.warofcards.RunGame
+    `java com.dharmeshsujeeun.warofcards.RunGame`
 
 In the near future I _may_ decide to implement a GUI version of this game using HTML5/CSS3/JavaScript, and host it
 on my website, [dharmeshsujeeun.com](http://dharmeshsujeeun.com).

@@ -19,14 +19,14 @@ from the real world. For example, a `Deck` consists of several `Card` objects, a
     5. `ACE` is considered the lowest ranked card in the game, while `KING` is the highest.
 
 ## Instructions to compile and run the game:
-    1. Create this folder hierarchy: _root/com/dharmeshsujeeun/warofcards_
-    2. Download the repository as a zip file and place it in the _warofcards_ folder.
+    1. Create this folder hierarchy: root/com/dharmeshsujeeun/warofcards
+    2. Download the repository as a zip file and place it in the warofcards folder.
     3. Extract the contents of the zip file in the same folder.
-    4. Open a terminal and navigate to the _root_ folder.
+    4. Open a terminal and navigate to the root folder.
     5. Type this command in the terminal and press Enter (to compile the code):
-        _javac com/dharmeshsujeeun/warofcards/*.java_
+        javac com/dharmeshsujeeun/warofcards/\*.java
     6. Type this command in the terminal and press Enter (to run the game):
-        _java com.dharmeshsujeeun.warofcards.RunGame_
+        java com.dharmeshsujeeun.warofcards.RunGame
 
 In the near future I _may_ decide to implement a GUI version of this game using HTML5/CSS3/JavaScript, and host it
 on my website, [dharmeshsujeeun.com](http://dharmeshsujeeun.com).

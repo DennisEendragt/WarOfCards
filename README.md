@@ -22,6 +22,8 @@ from the real world. For example, a `Deck` consists of several `Card` objects, a
 1. Create this folder hierarchy: `root/com/dharmeshsujeeun/warofcards`
 2. Download the repository as a zip file and place it in the `warofcards` folder.
 3. Extract the contents of the zip file in the `warofcards` folder.
+4. Go into the newly extracted folder (probably named `WarOfCards-master`), select all the files there
+and move them to the `warofcards` folder.
 4. Open a terminal and navigate to the `root` folder.
 5. Type this command in the terminal and press Enter (to compile the code):   
     `javac com/dharmeshsujeeun/warofcards/*.java`

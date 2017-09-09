@@ -37,7 +37,7 @@ class Deck {
 
         try {
             for (int i = 0; i < NUM_CARDS_IN_DECK; ++i) {
-                temp = (Card)cards[i].clone();
+                temp = cards[i];
                 randomIndex = rng.nextInt(NUM_CARDS_IN_DECK);
                 cards[i] = cards[randomIndex];
                 cards[randomIndex] = temp;

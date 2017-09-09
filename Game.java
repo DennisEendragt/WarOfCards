@@ -14,7 +14,9 @@ class Game {
     private static final Scanner input = new Scanner(System.in);
 
     Game() {
+        out.println("\nCreating Deck...");
         deck = new Deck();
+        out.println("Deck created.");
         roundsPlayed = 0;
         p1Name = "";
         p2Name = "";

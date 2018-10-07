@@ -30,5 +30,3 @@ and move them to the `warofcards` folder.
 6. Type this command in the terminal and press Enter (to run the game):   
     `java com.dharmeshsujeeun.warofcards.RunGame`
 
-In the near future I _may_ decide to implement a GUI version of this game using HTML5/CSS3/JavaScript, and host it
-on my website, [dharmeshsujeeun.com](http://dharmeshsujeeun.com).
